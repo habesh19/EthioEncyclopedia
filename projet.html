@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <title>Découvrez l'Éthiopie - Trésor de l'Afrique</title>
+    <!-- CSS unifié -->
+    <link rel="stylesheet" href="projet.css">
+    <!-- Fonts externes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body class="page-projet">
+    <!-- Header & Navigation -->
+    <header id="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">Éthio<span>Encyclopédie</span></a>
+                
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="projet.html" class="active">Accueil</a></li>
+                    <li><a href="histoire.html">Histoire</a></li>
+                    <li><a href="culture.html">Culture</a></li>
+                    <li><a href="modernite.html">Modernité</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Section Hero -->
+    <section class="hero" id="accueil">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Découvrez l'Éthiopie, berceau de l'humanité</h1>
+                <p>Plongez au cœur du berceau de l'Afrique et de l'humanité. L'Éthiopie, un pays aux paysages époustouflants, une histoire millénaire et une culture vibrante vous fait découvrir son pays.</p>
+                <a href="#introduction" class="btn">Commencer l'exploration</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Introduction -->
+    <section id="introduction">
+        <div class="container">
+            <h2>Introduction</h2>
+            <div class="intro-content">
+                <div class="intro-text">
+                    <p class="animated-text">L'Éthiopie, située dans la Corne de l'Afrique, est l'un des plus anciens pays du monde et le seul pays africain à n'avoir jamais été colonisé. Berceau de l'humanité avec la découverte de Lucy, elle possède une histoire riche et fascinante.</p>
+                    <p class="animated-text">Avec ses paysages diversifiés allant des sommets enneigés du Ras Dashan aux déserts brûlants du Danakil, l'Éthiopie offre une variété géographique exceptionnelle.</p>
+                    <p class="animated-text">Connue pour ses traditions, sa religion, ses plats et son alphabet unique, elle est aussi célèbre pour son café, considéré comme l'un des meilleurs au monde.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Musique -->
+    <section id="musique" class="music-section">
+        <audio id="ethio-music" preload="metadata">
+            <source src="audio/Mulatu.mp3" type="audio/mpeg">
+        </audio>
+        <div class="container">
+            <h2><i class="fas fa-music"></i> Mélodies Éthiopiennes</h2>
+            <p class="section-subtitle">Quoi de mieux que du bon jazz Éthiopien pour plonger à la découverte de l'Éthiopie ? Découvrez les rythmes traditionnels et l'Ethio-jazz unique</p>
+            
+            <div class="music-player">
+                <div class="player-header">
+                    <div class="track-cover">
+                        <img src="images/mulatu.webp" alt="Mulatu Astatke">
+                    </div>
+                    <div class="track-info">
+                        <h3>Mulatu Astatke</h3>
+                        <p class="track-title">Yèkèrmo Sèw</p>
+                        <p class="track-genre">Ethio-Jazz • 1974</p>
+                        <div class="track-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill"></div>
+                            </div>
+                            <div class="time-display">
+                                <span class="current-time">0:00</span>
+                                <span class="total-time">4:32</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="player-controls">
+                    <button class="control-btn" title="Précédent">
+                        <i class="fas fa-step-backward"></i>
+                    </button>
+                    <button class="control-btn play-btn" title="Lecture">
+                        <i class="fas fa-play"></i>
+                    </button>
+                    <button class="control-btn" title="Suivant">
+                        <i class="fas fa-step-forward"></i>
+                    </button>
+                    <div class="volume-control">
+                        <i class="fas fa-volume-up"></i>
+                        <input type="range" min="0" max="100" value="80" class="volume-slider">
+                    </div>
+                </div>
+                
+                <div class="playlist">
+                    <h4>Playlist Éthiopienne</h4>
+                    <div class="playlist-items">
+                        <div class="playlist-item active">
+                            <div class="item-number">01</div>
+                            <div class="item-info">
+                                <h5>Yèkèrmo Sèw</h5>
+                                <p>Mulatu Astatke • Ethio-Jazz</p>
+                            </div>
+                            <div class="item-duration">4:32</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nouvelle section : Carousel d'images -->
+    <section id="carousel-section" class="carousel-section">
+        <div class="container">
+            <h2>Galerie Éthiopienne</h2>
+            <p class="section-subtitle">Découvrez les trésors visuels de l'Éthiopie à travers ce diaporama</p>
+            
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="carousel-slide active">
+                        <img src="images/tigrayp5.jpg" alt="Région Tigray">
+                        <div class="slide-caption">
+                            <h3>Région Tigray</h3>
+                            <p>Découvrez les plus beaux paysages du pays</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="images/gonder.jpg" alt="Région Gonder">
+                        <div class="slide-caption">
+                            <h3>Région Gonder</h3>
+                            <p>Découvrez les plus beaux paysages du pays</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="images/lac-tana6.jpg" alt="Lac Tana">
+                        <div class="slide-caption">
+                            <h3>Lac Tana</h3>
+                            <p>Découvrez les plus beaux paysages du pays</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="images/lion.jpg" alt="Lion - animal emblématique de l'Éthiopie">
+                        <div class="slide-caption">
+                            <h3>L'animal emblématique de l'Éthiopie</h3>
+                            <p>Découvrez les plus beaux paysages du pays</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="images/lac-tana7.jpg" alt="Région montagneuse">
+                        <div class="slide-caption">
+                            <h3>Région Montagneuses</h3>
+                            <p>Découvrez les plus beaux paysages du pays</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="images/tigrayp6.jpg" alt="Région Tigray">
+                        <div class="slide-caption">
+                            <h3>Région Tigray</h3>
+                            <p>Découvrez les plus beaux paysages du pays</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="images/chutes.jpg" alt="Chutes d'eau">
+                        <div class="slide-caption">
+                            <h3>Chutes d'eau</h3>
+                            <p>Découvrez les plus beaux paysages du pays</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="carousel-controls">
+                    <button class="carousel-btn prev-btn">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="carousel-dots">
+                        <span class="dot active" data-slide="0"></span>
+                        <span class="dot" data-slide="1"></span>
+                        <span class="dot" data-slide="2"></span>
+                        <span class="dot" data-slide="3"></span>
+                        <span class="dot" data-slide="4"></span>
+                        <span class="dot" data-slide="5"></span>
+                        <span class="dot" data-slide="6"></span>
+                    </div>
+                    <button class="carousel-btn next-btn">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Bouton après le carousel -->
+            <div class="carousel-action">
+                <a href="#cartes-sections" class="btn btn-secondary">
+                    <i class="fas fa-compass"></i> Explorer toutes les sections
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cartes introductives des sections -->
+    <section class="cartes-sections" id="cartes-sections">
+        <div class="container">
+            <h2>Explorez l'Éthiopie</h2>
+            <p class="section-subtitle">Découvrez les différentes facettes de ce pays fascinant</p>
+            
+            <div class="cartes-container">
+                <!-- Carte Histoire -->
+                <a href="histoire.html" class="carte-section">
+                    <div class="carte-image">
+                        <img src="images/haile.jpg" alt="Histoire de l'Éthiopie">
+                    </div>
+                    <div class="carte-content">
+                        <h3>Histoire</h3>
+                        <p>Découvrez l'histoire millénaire de l'Éthiopie, ses empires anciens et ses rois légendaires</p>
+                        <span class="carte-cta">Explorer <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </a>
+
+                <!-- Carte Culture -->
+                <a href="culture.html" class="carte-section">
+                    <div class="carte-image">
+                        <img src="images/buna.jpg" alt="Culture éthiopienne">
+                    </div>
+                    <div class="carte-content">
+                        <h3>Culture & Traditions</h3>
+                        <p>Plongez dans la riche culture éthiopienne, ses danses, sa musique et ses traditions</p>
+                        <span class="carte-cta">Explorer <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </a>
+
+                <!-- Carte Modernité -->
+                <a href="modernite.html" class="carte-section">
+                    <div class="carte-image">
+                        <img src="images/addis2.webp" alt="Modernité">
+                    </div>
+                    <div class="carte-content">
+                        <h3>Modernité</h3>
+                        <p>Explorez les paysages spectaculaires, des hauts plateaux aux déserts du Danakil</p>
+                        <span class="carte-cta">Explorer <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>ÉthioEncyclopédie</h3>
+                    <!--p>Une encyclopédie collaborative dédiée à la richesse culturelle, historique et géographique de l'Éthiopie.</p-->
+		    <p>Plongez à travers les richesses de l'Éthiopie, le berceau de l'humanité. Le pays n'attend plus que vous !<p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Navigation</h3>
+                    <ul class="footer-links">
+                        <li><a href="projet.html">Accueil</a></li>
+                        <li><a href="histoire.html">Histoire</a></li>
+                        <li><a href="culture.html">Culture & Traditions</a></li>
+                        <li><a href="modernite.html">Modernité</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Sections Accueil</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Haut de page</a></li>
+                        <li><a href="#introduction">Introduction</a></li>
+                        <li><a href="#musique">Mélodies Éthiopiennes</a></li>
+                        <li><a href="#carousel-section">Galerie</a></li>
+                        <li><a href="#cartes-sections">Explorez</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> Addis-Abeba, Éthiopie</li>
+                        <li><i class="fas fa-envelope"></i> contact@ethioencyclopedie.com</li>
+                        <li><i class="fas fa-globe"></i> www.ethioencyclopedie.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- AU CAS OÙ JE PUBLIE CE SITE UN JOUR -->
+            <!-- <div class="copyright">
+                <p>&copy; 2023 ÉthioEncyclopédie - Tous droits réservés</p>
+            </div> -->
+        </div>
+    </footer>
+
+    <!-- JavaScript unifié -->
+    <script src="projet.js"></script>
+</body>
+</html>
